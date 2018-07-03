@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Ignasi Clavera</title>
+    <meta name="description" content="">
+
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="canonical" href="http://localhost:4001/">
+    <link rel="alternate" type="application/rss+xml" title="Ignasi Clavera" href="http://localhost:4001/feed.xml">
+</head>
+
+    <body>
+        <header>
+    <div class="container">
+        <dl class="picture">
+        <dt>
+        <div class="intro">
+            <p class="intro__main"><span>Ignasi Clavera</span></p>
+            <p class="intro__job">PhD Student </p>
+            <p class="intro__location">UC Berkeley</p>
+            <div class="intro__text"><p>I am a first-year PhD student in CS at <a href="https://eecs.berkeley.edu/" title="EECS UC Berkeley" target="_blank">UC Berkeley</a> advised by <a href="http://people.eecs.berkeley.edu/~pabbeel/" title="Pieter Abbeel" target="_blank">Pieter Abbeel</a> in the <a href="http://bair.berkeley.edu/" title="BAIR" target="_blank">Berkeley Artificial Intelligence Research (BAIR)</a> Lab.</p>
+
+<p>My main research goal is to develop algorithms which enable robotic systems to learn how to perform complex tasks quickly and efficiently in a variety of unstructured environments. I am currently working in the areas of transfer learning and quick adaptation for Deep Reinforcement Learning algorithms applied to robotic systems. I am also working on getting robotic hands to be able to learn a variety of complex dexterous skills using Deep Reinforcement Learning. In the past I have worked on video prediction, learning from demonstration and hierarchical planning.</p>
+</div>
+        </div>
+
+        <div class="social">
+            <a href="http://github.com/iclavera" target="_blank">GitHub</a>
+            <a href="http://medium.com/@iclavera" target="_blank">Medium</a>
+            <a href="mailto:iclavera@berkeley.edu" target="_blank">Email</a>
+            <a href="site.resume_link" target="_blank">Resume</a>
+        </dt><!--
+        --><dd>
+        <div class="image-cropper">
+            <img src="img/me.jpg" class="rounded" />
+        </div>
+        </dd>
+        </dl>
+    </div>
+</header>
+
+            <div class="container">
+    <h3 class="section-title">Recent Preprints</h3>
+<dl class="experience">
+    
+        <dt>
+        <div class="image-paper">
+            <img src="img/learning2adapt.gif"/>
+        </div>
+        </dt><!--
+        --><dd>
+            <p class="title">Learning to Adapt: Meta-Learning for Model-Based Control</p>
+            <p class-"authors">Ignasi Clavera*, Anusha Nagabandi*, Ron Fearing, Pieter Abbeel, Sergey Levine, Chelsea Finn</p>
+            <p class="conference"></p>
+            <p class="period"></p>
+            <div class="social">
+            <a href="https://arxiv.org/abs/1803.11347" target="_blank">arXiv</a>
+            <a href="https://sites.google.com/berkeley.edu/metaadaptivecontrol" target="_blank">Webpage</a>
+            
+            </div>
+            <p class="abstract">Although reinforcement learning methods can achieve impressive results in simulation, the real world presents two major challenges: generating samples is exceedingly expensive, and unexpected perturbations can cause proficient but narrowly-learned policies to fail at test time. In this work, we propose to learn how to quickly and effectively adapt online to new situations as well as to perturbations. To enable sample-efficient meta-learning, we consider learning online adaptation in the context of model-based reinforcement learning. Our approach trains a global model such that, when combined with recent data, the model can be be rapidly adapted to the local context. Our experiments demonstrate that our approach can enable simulated agents to adapt their behavior online to novel terrains, to a crippled leg, and in highly-dynamic environments.</p>
+        </dd>
+    
+</dl>
+
+<h3 class="section-title">All Papers</h3>
+<dl class="experience">
+    
+        <dt>
+        <div class="image-paper">
+            <img src="img/magritte.jpg"/>
+        </div>
+        </dt><!--
+        --><dd>
+            <p class="title">Model-Ensemble Trust-Region Policy Optimization</p>
+            <p class-"authors"> Thanard Kurutach, <strong>Ignasi Clavera</strong>, Yan Duan, Aviv Tamar, Pieter Abbeel</p>
+            <p class="conference">International Conference on Learning Representations (ICLR), 2018</p>
+            <p class="period"></p>
+            <div class="social">
+            <a href="https://arxiv.org/abs/1802.10592" target="_blank">arXiv</a>
+            <a href="https://sites.google.com/site/modelensembletrpo/" target="_blank">Webpage</a>
+            
+            </div>
+            <p class="abstract">Model-free reinforcement learning (RL) methods are succeeding in a growing number of tasks, aided by recent advances in deep learning. However, they tend to suffer from high sample complexity, which hinders their use in real-world domains. Alternatively, model-based reinforcement learning promises to reduce sample complexity, but tends to require careful tuning and to date have succeeded mainly in restrictive domains where simple models are sufficient for learning. In this paper, we analyze the behavior of vanilla model-based reinforcement learning methods when deep neural networks are used to learn both the model and the policy, and show that the learned policy tends to exploit regions where insufficient data is available for the model to be learned, causing instability in training. To overcome this issue, we propose to use an ensemble of models to maintain the model uncertainty and regularize the learning process. We further show that the use of likelihood ratio derivatives yields much more stable learning than backpropagation through time. Altogether, our approach Model-Ensemble Trust-Region Policy Optimization (ME-TRPO) significantly reduces the sample complexity compared to model-free deep RL methods on challenging continuous control benchmark tasks.</p>
+        </dd>
+    
+        <dt>
+        <div class="image-paper">
+            <img src="img/magritte.jpg"/>
+        </div>
+        </dt><!--
+        --><dd>
+            <p class="title">Policy Transfer via Modularity and Reward Guiding</p>
+            <p class-"authors">Ignasi Clavera, David Held and Pieter Abbeel</p>
+            <p class="conference">International Conference on Intelligent Robots and Systems (IROS), 2017</p>
+            <p class="period"></p>
+            <div class="social">
+            <a href="https://www.ri.cmu.edu/wp-content/uploads/2017/11/IROS___RL_pushing.pdf" target="_blank">arXiv</a>
+            <a href="https://sites.google.com/site/policytransferviamodularity/" target="_blank">Webpage</a>
+            
+            </div>
+            <p class="abstract">Non-prehensile manipulation, such as pushing, is an important function for robots to move objects and is sometimes preferred as an alternative to grasping. However, due to unknown frictional forces, pushing has been proven a difficult task for robots. We explore the use of reinforcement learning to train a robot to robustly push an object. In order to deal with the sample complexity of training such a method, we train the pushing policy in simulation and then transfer this policy to the real world. In order to ease the transfer from simulation, we propose to use modularity to separate the learned policy from the raw inputs and outputs; rather than training “end-to-end,” we decompose our system into modules and train only a subset of these modules in simulation. We further demonstrate that we can incorporate prior knowledge about the task into the state space and the reward function to speed up convergence. Finally, we introduce ”reward guiding” to modify the reward function and further reduce the training time. We demonstrate, in both simulation and real-world experiments, that such an approach can be used to reliably push an object from many initial positions and orientations.</p>
+        </dd>
+    
+</dl>
+
+</div>
+
+        <footer class="footer">
+    <p class="footer__title">Ignasi Clavera</p>
+    <p class="footer__subtitle">PhD Student</p>
+</footer>
+
+    </body>
+</html>

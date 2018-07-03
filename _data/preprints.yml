@@ -1,0 +1,6 @@
+-   title: "Learning to Adapt: Meta-Learning for Model-Based Control"
+    authors: Ignasi Clavera*, Anusha Nagabandi*, Ron Fearing, Pieter Abbeel, Sergey Levine, Chelsea Finn
+    description: "Although reinforcement learning methods can achieve impressive results in simulation, the real world presents two major challenges: generating samples is exceedingly expensive, and unexpected perturbations can cause proficient but narrowly-learned policies to fail at test time. In this work, we propose to learn how to quickly and effectively adapt online to new situations as well as to perturbations. To enable sample-efficient meta-learning, we consider learning online adaptation in the context of model-based reinforcement learning. Our approach trains a global model such that, when combined with recent data, the model can be be rapidly adapted to the local context. Our experiments demonstrate that our approach can enable simulated agents to adapt their behavior online to novel terrains, to a crippled leg, and in highly-dynamic environments."
+    arxiv: https://arxiv.org/abs/1803.11347
+    webpage: https://sites.google.com/berkeley.edu/metaadaptivecontrol
+    image: learning2adapt.gif

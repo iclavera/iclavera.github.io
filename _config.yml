@@ -1,0 +1,20 @@
+# Jekyll Resume Theme
+
+# Site settings
+title: Ignasi Clavera
+email: iclavera@berkeley.edu
+baseurl: ""
+name: Ignasi Clavera
+job: PhD Student
+year: First
+location: UC Berkeley
+github_username:  iclavera
+medium_username: iclavera
+email_address: iclavera@berkeley.edu
+resume_link: http://www.github.com/iclavera/resume.pdf
+image: me.jpg
+
+# Build settings
+markdown: kramdown
+kramdown:
+  input: GFM
