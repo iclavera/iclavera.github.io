@@ -50,6 +50,16 @@ dt, dd {
     border-radius: 50%;
 }
 
+.image-cropper-small{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    left: 60%;
+    top: 50%;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
 img {
     height: 100%;
     width: auto;

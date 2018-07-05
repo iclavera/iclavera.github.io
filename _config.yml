@@ -13,6 +13,7 @@ medium_username: iclavera
 email_address: iclavera@berkeley.edu
 resume_link: http://www.github.com/iclavera/resume.pdf
 image: me.jpg
+github: [metadata]
 
 # Build settings
 markdown: kramdown

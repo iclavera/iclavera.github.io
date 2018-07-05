@@ -1,215 +1,81 @@
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
+/* http://meyerweb.com/eric/tools/css/reset/ v2.0 | 20110126 License: none (public domain)
 */
 @import url(https://fonts.googleapis.com/css?family=Lora:400,700|Playfair+Display:400,700,900);
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-  box-sizing: border-box; }
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; box-sizing: border-box; }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block; }
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
 
-body {
-  line-height: 1; }
+body { line-height: 1; }
 
-ol, ul {
-  list-style: none; }
+ol, ul { list-style: none; }
 
-blockquote, q {
-  quotes: none; }
+blockquote, q { quotes: none; }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none; }
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
 
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
+table { border-collapse: collapse; border-spacing: 0; }
 
-.container {
-  max-width: 860px;
-  margin: 0 auto;
-  padding: 0 20px; }
+.container { max-width: 860px; margin: 0 auto; padding: 0 20px; }
 
-.section-title {
-  text-transform: uppercase;
-  letter-spacing: 4px;
-  margin-bottom: 40px;
-  text-align: center;
-  position: relative; }
-  .section-title:after {
-    content: '';
-    position: absolute;
-    bottom: -5px;
-    left: 50%;
-    margin-left: -25px;
-    width: 50px;
-    height: 1px;
-    background: #222; }
+.section-title { text-transform: uppercase; letter-spacing: 4px; margin-bottom: 40px; text-align: center; position: relative; }
+.section-title:after { content: ''; position: absolute; bottom: -5px; left: 50%; margin-left: -25px; width: 50px; height: 1px; background: #222; }
 
-body {
-  font-family: "Lora", Helvetica, Arial, sans-serif, serif;
-  font-size: 16px;
-  line-height: 1.4; }
+body { font-family: "Lora", Helvetica, Arial, sans-serif, serif; font-size: 16px; line-height: 1.4; }
 
-header {
-  border-bottom: 1px solid #edefee;
-  padding: 40px 0;
-  margin-bottom: 40px; }
-  @media (min-width: 640px) {
-    header {
-      padding: 200px 0 60px;
-      margin-bottom: 60px; } }
+header { border-bottom: 1px solid #edefee; padding: 40px 0; margin-bottom: 40px; }
+@media (min-width: 640px) { header { padding: 200px 0 60px; margin-bottom: 60px; } }
 
-dl {
-  margin-bottom: 20px;
-  margin: 0 auto; }
+dl { margin-bottom: 20px; margin: 0 auto; }
 
-dt, dd {
-  display: inline-block;
-  vertical-align: top;
-  margin-bottom: 20px; }
+dt, dd { display: inline-block; vertical-align: top; margin-bottom: 20px; }
 
-@media (min-width: 640px) {
-  dt, dd {
-    margin-bottom: 60px; }
+@media (min-width: 640px) { dt, dd { margin-bottom: 60px; }
+  .picture dt { width: 70%; padding-right: 40px; padding-top: 10px; }
+  .picture dd { width: 30%; } }
+.image-cropper { width: 350px; height: 350px; position: relative; left: 40%; top: 50%; overflow: hidden; border-radius: 50%; }
 
-  .picture dt {
-    width: 70%;
-    padding-right: 40px;
-    padding-top: 10px; }
-  .picture dd {
-    width: 30%; } }
-.image-cropper {
-  width: 350px;
-  height: 350px;
-  position: relative;
-  left: 40%;
-  top: 50%;
-  overflow: hidden;
-  border-radius: 50%; }
+.image-cropper-small { width: 200px; height: 200px; position: relative; left: 60%; top: 50%; overflow: hidden; border-radius: 50%; }
 
-img {
-  height: 100%;
-  width: auto; }
+img { height: 100%; width: auto; }
 
-.intro {
-  margin-bottom: 40px; }
-  .intro__location {
-    text-transform: uppercase;
-    letter-spacing: 4px; }
-  .intro__text {
-    padding-top: 20px;
-    text-align: justify;
-    text-justify: inter-word; }
-  .intro__job {
-    font-size: 1.4rem;
-    line-height: 1.2; }
-    @media (min-width: 640px) {
-      .intro__job {
-        font-size: 2.0rem;
-        max-width: 60%; } }
-  .intro__main {
-    font-size: 1.8rem;
-    line-height: 1.2;
-    font-weight: bold;
-    margin: 10px 0 5px; }
-    @media (min-width: 640px) {
-      .intro__main {
-        font-size: 2.2rem;
-        max-width: 60%; } }
-  .intro a {
-    color: #1772d0 !important;
-    text-decoration: none;
-    background: #ffffff;
-    transition: all linear .2s; }
-    .intro a:hover {
-      color: #d7ab0f !important;
-      background: #ffffff;
-      text-decoration: none; }
+.intro { margin-bottom: 40px; }
+.intro__location { text-transform: uppercase; letter-spacing: 4px; }
+.intro__text { padding-top: 20px; text-align: justify; text-justify: inter-word; }
+.intro__job { font-size: 1.4rem; line-height: 1.2; }
+@media (min-width: 640px) { .intro__job { font-size: 2.0rem; max-width: 60%; } }
+.intro__main { font-size: 1.8rem; line-height: 1.2; font-weight: bold; margin: 10px 0 5px; }
+@media (min-width: 640px) { .intro__main { font-size: 2.2rem; max-width: 60%; } }
+.intro a { color: #1772d0 !important; text-decoration: none; background: #ffffff; transition: all linear .2s; }
+.intro a:hover { color: #d7ab0f !important; background: #ffffff; text-decoration: none; }
 
-.social a {
-  margin-right: 20px; }
+.social a { margin-right: 20px; }
 
-.footer {
-  padding: 40px 20px;
-  text-align: center;
-  border-top: 1px solid #edefee; }
-  .footer__title {
-    font-size: 1.2rem;
-    font-weight: bold; }
-  .footer__subtitle {
-    text-transform: capitalize; }
+.footer { padding: 40px 20px; text-align: center; border-top: 1px solid #edefee; }
+.footer__title { font-size: 1.2rem; font-weight: bold; }
+.footer__subtitle { text-transform: capitalize; }
 
-dl {
-  margin-bottom: 20px; }
+dl { margin-bottom: 20px; }
 
-dt, dd {
-  margin-bottom: 20px; }
+dt, dd { margin-bottom: 20px; }
 
-@media (min-width: 640px) {
-  dt, dd {
-    margin-bottom: 60px; }
+@media (min-width: 640px) { dt, dd { margin-bottom: 60px; }
+  .experience dt { width: 30%; padding-right: 40px; padding-top: 10px; }
+  .experience dd { width: 70%; }
+  .education dt, .education dd { width: 50%; } }
+.image-paper { width: 175px; height: 175px; position: relative; left: 0%; top: 50%; overflow: hidden; }
 
-  .experience dt {
-    width: 30%;
-    padding-right: 40px;
-    padding-top: 10px; }
-  .experience dd {
-    width: 70%; }
+img { height: 100%; width: auto; }
 
-  .education dt, .education dd {
-    width: 50%; } }
-.image-paper {
-  width: 175px;
-  height: 175px;
-  position: relative;
-  left: 0%;
-  top: 50%;
-  overflow: hidden; }
+.title { margin: 0; font-weight: bold; font-size: 1.2rem; }
 
-img {
-  height: 100%;
-  width: auto; }
+.authors { display: inline; }
 
-.title {
-  margin: 0;
-  font-weight: bold;
-  font-size: 1.2rem; }
+.me_author { font-weight: bold; display: inline; }
 
-.abstract {
-  padding-top: 20px;
-  text-align: justify;
-  text-justify: inter-word; }
+.abstract { padding-top: 20px; text-align: justify; text-justify: inter-word; }
 
-.conference {
-  font-style: italic; }
+.conference { font-style: italic; }
 
-a {
-  color: black !important;
-  background: rgba(245, 215, 110, 0.5);
-  transition: all linear .2s; }
-  a:hover {
-    background: #f5d76e;
-    text-decoration: none; }
+a { color: black !important; background: rgba(245, 215, 110, 0.5); transition: all linear .2s; }
+a:hover { background: #f5d76e; text-decoration: none; }
