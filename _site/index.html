@@ -46,43 +46,6 @@
     <h3 class="section-title">Recent Preprints</h3>
 <dl class="experience">
     
-        <dt>
-        <div class="image-paper">
-            <img src="img/learning2adapt.gif"/>
-        </div>
-        </dt><!--
-        --><dd>
-            <p class="title">Learning to Adapt: Meta-Learning for Model-Based Control</p>
-             
-                
-                <p class="me_author">Ignasi Clavera*,</p>
-                
-            
-                
-                 <p class="authors">Anusha Nagabandi*,</p>
-            
-                
-                 <p class="authors">Ron Fearing,</p>
-            
-                
-                 <p class="authors">Pieter Abbeel,</p>
-            
-                
-                 <p class="authors">Sergey Levine and</p>
-            
-                
-                 <p class="authors">Chelsea Finn</p>
-            
-            <p class="conference"></p>
-            <p class="period"></p>
-            <div class="social">
-            <a href="https://arxiv.org/abs/1803.11347" target="_blank">arXiv</a>
-            <a href="https://sites.google.com/berkeley.edu/metaadaptivecontrol" target="_blank">Webpage</a>
-            
-            </div>
-            <p class="abstract">Although reinforcement learning methods can achieve impressive results in simulation, the real world presents two major challenges: generating samples is exceedingly expensive, and unexpected perturbations can cause proficient but narrowly-learned policies to fail at test time. In this work, we propose to learn how to quickly and effectively adapt online to new situations as well as to perturbations. To enable sample-efficient meta-learning, we consider learning online adaptation in the context of model-based reinforcement learning. Our approach trains a global model such that, when combined with recent data, the model can be be rapidly adapted to the local context. Our experiments demonstrate that our approach can enable simulated agents to adapt their behavior online to novel terrains, to a crippled leg, and in highly-dynamic environments.</p>
-        </dd>
-    
 </dl>
 
 <h3 class="section-title">All Papers</h3>
@@ -94,20 +57,131 @@
         </div>
         </dt><!--
         --><dd>
+            <p class="title">Model-Based Reinforcement Learning via Meta-Policy Optimization</p>
+            
+                
+                 <p class="authors">Jonas Rothfuss*,</p>
+            
+                
+                 <p class="authors">Denis Lee*,</p>
+            
+                
+                <p class="me_author">Ignasi Clavera*,⋅</p>
+                
+            
+                
+                 <p class="authors">Tamim Asfour and⋅</p>
+            
+                
+                 <p class="authors">Pieter Abbeel</p>
+            
+            <p class="conference">International Conference on Learning Representations (ICLR), 2019</p>
+            <p class="period"></p>
+            <div class="social">
+            <a href="https://arxiv.org/abs/1810.06784" target="_blank">arXiv</a>
+            <a href="https://sites.google.com/view/pro-mp" target="_blank">Webpage</a>
+            
+            </div>
+            <p class="abstract">Credit assignment in Meta-reinforcement learning (Meta-RL) is still poorly understood. Existing methods either neglect credit assignment to pre-adaptation behavior or implement it naively. This leads to poor sample-efficiency during meta-training as well as ineffective task identification strategies. This paper provides a theoretical analysis of credit assignment in gradient-based Meta-RL. Building on the gained insights we develop a novel meta-learning algorithm that overcomes both the issue of poor credit assignment and previous difficulties in estimating meta-policy gradients. By controlling the statistical distance of both pre-adaptation and adapted policies during meta-policy search, the proposed algorithm endows efficient and stable meta-learning. Our approach leads to superior pre-adaptation policy behavior and consistently outperforms previous Meta-RL algorithms in sample-efficiency, wall-clock time, and asymptotic performance.</p>
+        </dd>
+    
+        <dt>
+        <div class="image-paper">
+            <img src="img/learning2adapt.gif"/>
+        </div>
+        </dt><!--
+        --><dd>
+            <p class="title">Learning to Adapt in Dynamic, Real-World Environments Through Meta-Reinforcement Learning</p>
+            
+                
+                 <p class="authors">Anusha Nagabandi*,⋅</p>
+            
+                
+                <p class="me_author">Ignasi Clavera*,⋅</p>
+                
+            
+                
+                 <p class="authors">Simin Liu,</p>
+            
+                
+                 <p class="authors">Ron Fearing,⋅</p>
+            
+                
+                 <p class="authors">Pieter Abbeel,⋅</p>
+            
+                
+                 <p class="authors">Sergey Levine and⋅</p>
+            
+                
+                 <p class="authors">Chelsea Finn</p>
+            
+            <p class="conference">International Conference on Learning Representations (ICLR), 2019</p>
+            <p class="period"></p>
+            <div class="social">
+            <a href="https://arxiv.org/abs/1803.11347" target="_blank">arXiv</a>
+            <a href="https://sites.google.com/berkeley.edu/metaadaptivecontrol" target="_blank">Webpage</a>
+            
+            </div>
+            <p class="abstract">Although reinforcement learning methods can achieve impressive results in simulation, the real world presents two major challenges 1) generating samples is exceedingly expensive, and 2) unexpected perturbations or unseen situations cause proficient but specialized policies to fail at test time. Given that it is impractical to train separate policies to accommodate all situations the agent may see in the real world, this work proposes to learn how to quickly and effectively adapt online to new tasks. To enable sample-efficient learning, we consider learning online adaptation in the context of model-based reinforcement learning. Our approach uses meta-learning to train a dynamics model prior such that, when combined with recent data, this prior can be rapidly adapted to the local context. Our experiments demonstrate online adaptation for continuous control tasks on both simulated and real-world agents. We first show simulated agents adapting their behavior online to novel terrains, crippled body parts, and highly-dynamic environments. We also illustrate the importance of incorporating online adaptation into autonomous agents that operate in the real world by applying our method to a real dynamic legged millirobot. We demonstrate the agent's learned ability to quickly adapt online to a missing leg, adjust to novel terrains and slopes, account for miscalibration or errors in pose estimation, and compensate for pulling payloads.</p>
+        </dd>
+    
+        <dt>
+        <div class="image-paper">
+            <img src="img/magritte.jpg"/>
+        </div>
+        </dt><!--
+        --><dd>
+            <p class="title">Model-Based Reinforcement Learning via Meta-Policy Optimization</p>
+            
+                
+                <p class="me_author">Ignasi Clavera*,⋅</p>
+                
+            
+                
+                 <p class="authors">Jonas Rothfuss*,</p>
+            
+                
+                 <p class="authors">John Schulman,⋅</p>
+            
+                
+                 <p class="authors">Yasuhiro Fujita,</p>
+            
+                
+                 <p class="authors">Tamim Asfour and⋅</p>
+            
+                
+                 <p class="authors">Pieter Abbeel</p>
+            
+            <p class="conference">Conference on Robot Learning (CORL), 2018</p>
+            <p class="period"></p>
+            <div class="social">
+            <a href="https://arxiv.org/abs/1809.05214" target="_blank">arXiv</a>
+            <a href="https://sites.google.com/view/mb-mpo" target="_blank">Webpage</a>
+            
+            </div>
+            <p class="abstract">Model-based reinforcement learning approaches carry the promise of being data efficient. However, due to challenges in learning dynamics models that sufficiently match the real-world dynamics, they struggle to achieve the same asymptotic performance as model-free methods. We propose Model-Based Meta-Policy-Optimization (MB-MPO), an approach that foregoes the strong reliance on accurate learned dynamics models. Using an ensemble of learned dynamic models, MB-MPO meta-learns a policy that can quickly adapt to any model in the ensemble with one policy gradient step. This steers the meta-policy towards internalizing consistent dynamics predictions among the ensemble while shifting the burden of behaving optimally w.r.t. the model discrepancies towards the adaptation step. Our experiments show that MB-MPO is more robust to model imperfections than previous model-based approaches. Finally, we demonstrate that our approach is able to match the asymptotic performance of model-free methods while requiring significantly less experience.</p>
+        </dd>
+    
+        <dt>
+        <div class="image-paper">
+            <img src="img/magritte.jpg"/>
+        </div>
+        </dt><!--
+        --><dd>
             <p class="title">Model-Ensemble Trust-Region Policy Optimization</p>
             
                 
-                 <p class="authors">Thanard Kurutach,</p>
+                 <p class="authors">Thanard Kurutach,⋅</p>
             
                 
-                <p class="me_author">Ignasi Clavera,</p>
+                <p class="me_author">Ignasi Clavera,⋅</p>
                 
             
                 
-                 <p class="authors">Yan Duan,</p>
+                 <p class="authors">Yan Duan,⋅</p>
             
                 
-                 <p class="authors">Aviv Tamar and</p>
+                 <p class="authors">Aviv Tamar and⋅</p>
             
                 
                  <p class="authors">Pieter Abbeel</p>
