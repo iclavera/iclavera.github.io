@@ -1,9 +1,9 @@
 -   title: Model-Based Reinforcement Learning via Meta-Policy Optimization
     authors:
-            - Jonas Rothfuss*,
-            - Denis Lee*,
-            - Ignasi Clavera*,⋅
-            - Tamim Asfour and⋅
+            - Jonas Rothfuss*, 
+            - Denis Lee*, 
+            - Ignasi Clavera*, 
+            - Tamim Asfour and 
             - Pieter Abbeel
     conference: International Conference on Learning Representations (ICLR), 2019
     description: Credit assignment in Meta-reinforcement learning (Meta-RL) is still poorly understood. Existing methods either neglect credit assignment to pre-adaptation behavior or implement it naively. This leads to poor sample-efficiency during meta-training as well as ineffective task identification strategies. This paper provides a theoretical analysis of credit assignment in gradient-based Meta-RL. Building on the gained insights we develop a novel meta-learning algorithm that overcomes both the issue of poor credit assignment and previous difficulties in estimating meta-policy gradients. By controlling the statistical distance of both pre-adaptation and adapted policies during meta-policy search, the proposed algorithm endows efficient and stable meta-learning. Our approach leads to superior pre-adaptation policy behavior and consistently outperforms previous Meta-RL algorithms in sample-efficiency, wall-clock time, and asymptotic performance.
@@ -13,12 +13,12 @@
 
 -   title: Learning to Adapt in Dynamic, Real-World Environments Through Meta-Reinforcement Learning
     authors:
-            - Anusha Nagabandi*,⋅
-            - Ignasi Clavera*,⋅
-            - Simin Liu,
-            - Ron Fearing,⋅
-            - Pieter Abbeel,⋅
-            - Sergey Levine and⋅
+            - Anusha Nagabandi*, 
+            - Ignasi Clavera*, 
+            - Simin Liu, 
+            - Ron Fearing, 
+            - Pieter Abbeel, 
+            - Sergey Levine and 
             - Chelsea Finn
     conference: International Conference on Learning Representations (ICLR), 2019
     description: Although reinforcement learning methods can achieve impressive results in simulation, the real world presents two major challenges 1) generating samples is exceedingly expensive, and 2) unexpected perturbations or unseen situations cause proficient but specialized policies to fail at test time. Given that it is impractical to train separate policies to accommodate all situations the agent may see in the real world, this work proposes to learn how to quickly and effectively adapt online to new tasks. To enable sample-efficient learning, we consider learning online adaptation in the context of model-based reinforcement learning. Our approach uses meta-learning to train a dynamics model prior such that, when combined with recent data, this prior can be rapidly adapted to the local context. Our experiments demonstrate online adaptation for continuous control tasks on both simulated and real-world agents. We first show simulated agents adapting their behavior online to novel terrains, crippled body parts, and highly-dynamic environments. We also illustrate the importance of incorporating online adaptation into autonomous agents that operate in the real world by applying our method to a real dynamic legged millirobot. We demonstrate the agent's learned ability to quickly adapt online to a missing leg, adjust to novel terrains and slopes, account for miscalibration or errors in pose estimation, and compensate for pulling payloads.
@@ -28,11 +28,11 @@
 
 -   title: Model-Based Reinforcement Learning via Meta-Policy Optimization
     authors:
-            - Ignasi Clavera*,⋅
-            - Jonas Rothfuss*,
-            - John Schulman,⋅
-            - Yasuhiro Fujita,
-            - Tamim Asfour and⋅
+            - Ignasi Clavera*, 
+            - Jonas Rothfuss*, 
+            - John Schulman, 
+            - Yasuhiro Fujita, 
+            - Tamim Asfour and 
             - Pieter Abbeel
     conference: Conference on Robot Learning (CORL), 2018
     description: Model-based reinforcement learning approaches carry the promise of being data efficient. However, due to challenges in learning dynamics models that sufficiently match the real-world dynamics, they struggle to achieve the same asymptotic performance as model-free methods. We propose Model-Based Meta-Policy-Optimization (MB-MPO), an approach that foregoes the strong reliance on accurate learned dynamics models. Using an ensemble of learned dynamic models, MB-MPO meta-learns a policy that can quickly adapt to any model in the ensemble with one policy gradient step. This steers the meta-policy towards internalizing consistent dynamics predictions among the ensemble while shifting the burden of behaving optimally w.r.t. the model discrepancies towards the adaptation step. Our experiments show that MB-MPO is more robust to model imperfections than previous model-based approaches. Finally, we demonstrate that our approach is able to match the asymptotic performance of model-free methods while requiring significantly less experience.
@@ -42,10 +42,10 @@
 
 -   title: Model-Ensemble Trust-Region Policy Optimization
     authors:
-             - Thanard Kurutach,⋅
-             - Ignasi Clavera,⋅
-             - Yan Duan,⋅
-             - Aviv Tamar and⋅
+             - Thanard Kurutach, 
+             - Ignasi Clavera, 
+             - Yan Duan, 
+             - Aviv Tamar and 
              - Pieter Abbeel
     conference: International Conference on Learning Representations (ICLR), 2018
     description: Model-free reinforcement learning (RL) methods are succeeding in a growing number of tasks, aided by recent advances in deep learning. However, they tend to suffer from high sample complexity, which hinders their use in real-world domains. Alternatively, model-based reinforcement learning promises to reduce sample complexity, but tends to require careful tuning and to date have succeeded mainly in restrictive domains where simple models are sufficient for learning. In this paper, we analyze the behavior of vanilla model-based reinforcement learning methods when deep neural networks are used to learn both the model and the policy, and show that the learned policy tends to exploit regions where insufficient data is available for the model to be learned, causing instability in training. To overcome this issue, we propose to use an ensemble of models to maintain the model uncertainty and regularize the learning process. We further show that the use of likelihood ratio derivatives yields much more stable learning than backpropagation through time. Altogether, our approach Model-Ensemble Trust-Region Policy Optimization (ME-TRPO) significantly reduces the sample complexity compared to model-free deep RL methods on challenging continuous control benchmark tasks.
