@@ -65,7 +65,7 @@ dt, dd { margin-bottom: 20px; }
   .education dt, .education dd { width: 50%; } }
 .image-paper { width: 175px; height: 175px; position: relative; left: 0%; top: 50%; overflow: hidden; }
 
-img { height: auto; width: auto; }
+img { height: 175px; width: auto; }
 
 .title { margin: 0; font-weight: bold; font-size: 1.2rem; }
 
