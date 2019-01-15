@@ -31,13 +31,13 @@ dl { margin-bottom: 20px; margin: 0 auto; }
 dt, dd { display: inline-block; vertical-align: top; margin-bottom: 20px; }
 
 @media (min-width: 640px) { dt, dd { margin-bottom: 60px; }
-  .picture dt { width: 70%; padding-right: 40px; padding-top: 10px; }
-  .picture dd { width: 30%; } }
-.image-cropper { width: 350px; height: 350px; position: relative; left: 40%; top: 50%; overflow: hidden; border-radius: 50%; }
+  .picture dt { width: 65%; padding-right: 20px; padding-top: 10px; }
+  .picture dd { width: 34%; padding-top: 40px; } }
+.image-cropper { width: 600px; height: auto; position: relative; left: 40%; top: 70%; overflow: visible; }
 
-.image-cropper-small { width: 200px; height: 200px; position: relative; left: 60%; top: 50%; overflow: hidden; border-radius: 50%; }
+.image-cropper-small { width: 500px; height: auto; position: relative; left: 60%; top: 50%; overflow: hidden; }
 
-img { height: 100%; width: auto; }
+img { height: 150%; width: auto; }
 
 .intro { margin-bottom: 40px; }
 .intro__location { text-transform: uppercase; letter-spacing: 4px; }

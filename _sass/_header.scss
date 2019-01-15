@@ -30,38 +30,37 @@ dt, dd {
 
     .picture {
         dt {
-            width: 70%;
-            padding-right: ($spacer * 2);
+            width: 65%;
+            padding-right: ($spacer);
             padding-top: 10px;
         }
         dd {
-            width: 30%;
+            width: 34%;
+            padding-top: 40px;
         }
     }
 }
 
 .image-cropper {
-    width: 350px;
-    height: 350px;
+    width: 600px;
+    height: auto;
     position: relative;
     left: 40%;
-    top: 50%;
-    overflow: hidden;
-    border-radius: 50%;
+    top: 70%;
+    overflow: visible;
 }
 
 .image-cropper-small{
-    width: 200px;
-    height: 200px;
+    width: 500px;
+    height: auto;
     position: relative;
     left: 60%;
     top: 50%;
     overflow: hidden;
-    border-radius: 50%;
 }
 
 img {
-    height: 100%;
+    height: 150%;
     width: auto;
 }
 
