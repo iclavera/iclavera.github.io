@@ -63,9 +63,9 @@ dt, dd { margin-bottom: 20px; }
   .experience dt { width: 30%; padding-right: 40px; padding-top: 10px; }
   .experience dd { width: 70%; }
   .education dt, .education dd { width: 50%; } }
-.image-paper { width: 175px; height: auto; position: relative; left: 0%; top: 50%; overflow: hidden; text-align: center; }
+.image-paper { width: 175px; height: auto; position: left; left: 0%; top: 50%; overflow: hidden; text-align: left; }
 
-img { height: 175px; width: auto; text-align: center; }
+img { height: 175px; width: auto; text-align: left; }
 
 .title { margin: 0; font-weight: bold; font-size: 1.2rem; }
 
