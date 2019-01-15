@@ -38,7 +38,7 @@ dt, dd {
     position: left;
     left: 0%;
     top: 50%;
-    overflow: hidden;
+    overflow: visible;
     text-align: left;
 }
 
@@ -46,6 +46,7 @@ img {
     height: 175px;
     width: auto;
     text-align: left;
+    position: left;
 }
 
 .title {
