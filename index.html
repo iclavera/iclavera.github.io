@@ -1,7 +1,261 @@
----
-layout: main
----
+<!doctype html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<div class="container">
-    {% include resume.html %}
+    <title>Ignasi Clavera</title>
+    <meta name="description" content="Personal Web Page">
+
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="canonical" href="/">
+    <link rel="alternate" type="application/rss+xml" title="Ignasi Clavera" href="/feed.xml">
+</head>
+
+    <body>
+        <header>
+    <div class="container">
+        <dl class="picture">
+        <dt>
+        <div class="intro">
+            <p class="intro__main"><span>Ignasi Clavera</span></p>
+            <p class="intro__job">PhD Student </p>
+            <p class="intro__location">UC Berkeley</p>
+            <div class="intro__text"><p>I am a third year PhD student in CS at <a href="https://eecs.berkeley.edu/" title="EECS UC Berkeley" target="_blank">UC Berkeley</a> advised by <a href="http://people.eecs.berkeley.edu/~pabbeel/" title="Pieter Abbeel" target="_blank">Pieter Abbeel</a> in the <a href="http://bair.berkeley.edu/" title="BAIR" target="_blank">Berkeley Artificial Intelligence Research (BAIR)</a> Lab.</p>
+<p>My research is at the intersection of machine learning and control. Specifically, I aim to enable robotic systems to learn how to perform complex tasks efficiently.</p>
 </div>
+        </div>
+
+        <div class="social">
+            <a href="http://github.com/iclavera" target="_blank">GitHub</a>
+            <a href="mailto:iclavera@berkeley.edu" target="_blank">Email</a>
+            <a href="site.resume_link" target="_blank">Resume</a>
+        </dt><!--
+        --><dd>
+        <div class="image-cropper">
+            <img src="img/me.jpg" class="rounded" />
+        </div>
+        </dd>
+        </dl>
+    </div>
+</header>
+
+            <div class="container">
+    <h3 class="section-title">Recent Preprints</h3>
+<dl class="experience">
+    
+</dl>
+
+<h3 class="section-title">All Papers</h3>
+<dl class="experience">
+            <dt>
+        <div class="image-paper">
+            <img src="img/asynch.png"/>
+        </div>
+        </dt><!--
+        --><dd>
+            <p class="title">Asynchronous Methods for Model-Based Reinforcement Learning</p>
+
+
+                 <p class="authors">Yunzhi Zhang*,</p>
+                <p class="me_author">Ignasi Clavera*,</p>
+                 <p class="authors">Boren Tsai and</p>
+                 <p class="authors">Pieter Abbeel</p>
+
+            <p class="conference">Conference on Robot Learning (CORL), 2019</p>
+            <p class="period"></p>
+            <div class="social">
+            <a href="https://arxiv.org/abs/1910.12453" target="_blank">arXiv</a>
+            <a href="https://sites.google.com/view/asynch-mb-rl" target="_blank">Webpage</a>
+
+            </div>
+            <p class="abstract">
+               Significant progress has been made in the area of model-based reinforcement learning. State-of-the-art algorithms are now able to match the asymptotic performance of model-free methods while being significantly more data efficient. However, this success has come at a price: state-of-the-art model-based methods require significant computation interleaved with data collection, resulting in run times that take days, even if the amount of agent interaction might be just hours or even minutes.  When considering the goal of learning in real-time on real robots, this means these state-of-the-art model-based algorithms still remain impractical. In this work, we propose an asynchronous framework for model-based reinforcement learning methods that brings down the run time of these algorithms to be just the data collection time.  We evaluate our asynchronous framework on a range of standard MuJoCo benchmarks.  We also evaluate our asynchronous framework on three real-world robotic manipulation tasks. We show how asynchronous learning not only speeds up learning w.r.t wall-clock time through parallelization, but also further reduces the sample complexity of model-based approaches by means of improving the exploration and by means of effectively avoiding the policy overfitting to the deficiencies of learned dynamics models.
+            </p>
+        </dd>
+    
+        <dt>
+        <div class="image-paper">
+            <img src="img/promp.png"/>
+        </div>
+        </dt><!--
+        --><dd>
+            <p class="title">ProMP. Proximal Meta-Policy Search</p>
+            
+                
+                 <p class="authors">Jonas Rothfuss*,</p>
+            
+                
+                 <p class="authors">Denis Lee*,</p>
+            
+                
+                <p class="me_author">Ignasi Clavera*,</p>
+                
+            
+                
+                 <p class="authors">Tamim Asfour and</p>
+            
+                
+                 <p class="authors">Pieter Abbeel</p>
+            
+            <p class="conference">International Conference on Learning Representations (ICLR), 2019</p>
+            <p class="period"></p>
+            <div class="social">
+            <a href="https://arxiv.org/abs/1810.06784" target="_blank">arXiv</a>
+            <a href="https://sites.google.com/view/pro-mp" target="_blank">Webpage</a>
+            
+            </div>
+            <p class="abstract">Credit assignment in Meta-reinforcement learning (Meta-RL) is still poorly understood. Existing methods either neglect credit assignment to pre-adaptation behavior or implement it naively. This leads to poor sample-efficiency during meta-training as well as ineffective task identification strategies. This paper provides a theoretical analysis of credit assignment in gradient-based Meta-RL. Building on the gained insights we develop a novel meta-learning algorithm that overcomes both the issue of poor credit assignment and previous difficulties in estimating meta-policy gradients. By controlling the statistical distance of both pre-adaptation and adapted policies during meta-policy search, the proposed algorithm endows efficient and stable meta-learning. Our approach leads to superior pre-adaptation policy behavior and consistently outperforms previous Meta-RL algorithms in sample-efficiency, wall-clock time, and asymptotic performance.</p>
+        </dd>
+    
+        <dt>
+        <div class="image-paper">
+            <img src="img/learning2adapt.gif"/>
+        </div>
+        </dt><!--
+        --><dd>
+            <p class="title">Learning to Adapt in Dynamic, Real-World Environments Through Meta-Reinforcement Learning</p>
+            
+                
+                 <p class="authors">Anusha Nagabandi*,</p>
+            
+                
+                <p class="me_author">Ignasi Clavera*,</p>
+                
+            
+                
+                 <p class="authors">Simin Liu,</p>
+            
+                
+                 <p class="authors">Ron Fearing,</p>
+            
+                
+                 <p class="authors">Pieter Abbeel,</p>
+            
+                
+                 <p class="authors">Sergey Levine and</p>
+            
+                
+                 <p class="authors">Chelsea Finn</p>
+            
+            <p class="conference">International Conference on Learning Representations (ICLR), 2019</p>
+            <p class="period"></p>
+            <div class="social">
+            <a href="https://arxiv.org/abs/1803.11347" target="_blank">arXiv</a>
+            <a href="https://sites.google.com/berkeley.edu/metaadaptivecontrol" target="_blank">Webpage</a>
+            
+            </div>
+            <p class="abstract">Although reinforcement learning methods can achieve impressive results in simulation, the real world presents two major challenges 1) generating samples is exceedingly expensive, and 2) unexpected perturbations or unseen situations cause proficient but specialized policies to fail at test time. Given that it is impractical to train separate policies to accommodate all situations the agent may see in the real world, this work proposes to learn how to quickly and effectively adapt online to new tasks. To enable sample-efficient learning, we consider learning online adaptation in the context of model-based reinforcement learning. Our approach uses meta-learning to train a dynamics model prior such that, when combined with recent data, this prior can be rapidly adapted to the local context. Our experiments demonstrate online adaptation for continuous control tasks on both simulated and real-world agents. We first show simulated agents adapting their behavior online to novel terrains, crippled body parts, and highly-dynamic environments. We also illustrate the importance of incorporating online adaptation into autonomous agents that operate in the real world by applying our method to a real dynamic legged millirobot. We demonstrate the agent's learned ability to quickly adapt online to a missing leg, adjust to novel terrains and slopes, account for miscalibration or errors in pose estimation, and compensate for pulling payloads.</p>
+        </dd>
+    
+        <dt>
+        <div class="image-paper">
+            <img src="img/mbmpo.png"/>
+        </div>
+        </dt><!--
+        --><dd>
+            <p class="title">Model-Based Reinforcement Learning via Meta-Policy Optimization</p>
+            
+                
+                <p class="me_author">Ignasi Clavera*,</p>
+                
+            
+                
+                 <p class="authors">Jonas Rothfuss*,</p>
+            
+                
+                 <p class="authors">John Schulman,</p>
+            
+                
+                 <p class="authors">Yasuhiro Fujita,</p>
+            
+                
+                 <p class="authors">Tamim Asfour and</p>
+            
+                
+                 <p class="authors">Pieter Abbeel</p>
+            
+            <p class="conference">Conference on Robot Learning (CORL), 2018</p>
+            <p class="period"></p>
+            <div class="social">
+            <a href="https://arxiv.org/abs/1809.05214" target="_blank">arXiv</a>
+            <a href="https://sites.google.com/view/mb-mpo" target="_blank">Webpage</a>
+            
+            </div>
+            <p class="abstract">Model-based reinforcement learning approaches carry the promise of being data efficient. However, due to challenges in learning dynamics models that sufficiently match the real-world dynamics, they struggle to achieve the same asymptotic performance as model-free methods. We propose Model-Based Meta-Policy-Optimization (MB-MPO), an approach that foregoes the strong reliance on accurate learned dynamics models. Using an ensemble of learned dynamic models, MB-MPO meta-learns a policy that can quickly adapt to any model in the ensemble with one policy gradient step. This steers the meta-policy towards internalizing consistent dynamics predictions among the ensemble while shifting the burden of behaving optimally w.r.t. the model discrepancies towards the adaptation step. Our experiments show that MB-MPO is more robust to model imperfections than previous model-based approaches. Finally, we demonstrate that our approach is able to match the asymptotic performance of model-free methods while requiring significantly less experience.</p>
+        </dd>
+    
+        <dt>
+        <div class="image-paper">
+            <img src="img/metrpo.png"/>
+        </div>
+        </dt><!--
+        --><dd>
+            <p class="title">Model-Ensemble Trust-Region Policy Optimization</p>
+            
+                
+                 <p class="authors">Thanard Kurutach,</p>
+            
+                
+                <p class="me_author">Ignasi Clavera,</p>
+                
+            
+                
+                 <p class="authors">Yan Duan,</p>
+            
+                
+                 <p class="authors">Aviv Tamar and</p>
+            
+                
+                 <p class="authors">Pieter Abbeel</p>
+            
+            <p class="conference">International Conference on Learning Representations (ICLR), 2018</p>
+            <p class="period"></p>
+            <div class="social">
+            <a href="https://arxiv.org/abs/1802.10592" target="_blank">arXiv</a>
+            <a href="https://sites.google.com/site/modelensembletrpo/" target="_blank">Webpage</a>
+            
+            </div>
+            <p class="abstract">Model-free reinforcement learning (RL) methods are succeeding in a growing number of tasks, aided by recent advances in deep learning. However, they tend to suffer from high sample complexity, which hinders their use in real-world domains. Alternatively, model-based reinforcement learning promises to reduce sample complexity, but tends to require careful tuning and to date have succeeded mainly in restrictive domains where simple models are sufficient for learning. In this paper, we analyze the behavior of vanilla model-based reinforcement learning methods when deep neural networks are used to learn both the model and the policy, and show that the learned policy tends to exploit regions where insufficient data is available for the model to be learned, causing instability in training. To overcome this issue, we propose to use an ensemble of models to maintain the model uncertainty and regularize the learning process. We further show that the use of likelihood ratio derivatives yields much more stable learning than backpropagation through time. Altogether, our approach Model-Ensemble Trust-Region Policy Optimization (ME-TRPO) significantly reduces the sample complexity compared to model-free deep RL methods on challenging continuous control benchmark tasks.</p>
+        </dd>
+    
+        <dt>
+        <div class="image-paper">
+            <img src="img/PR2Transfer.png"/>
+        </div>
+        </dt><!--
+        --><dd>
+            <p class="title">Policy Transfer via Modularity and Reward Guiding</p>
+            
+                
+                <p class="me_author">Ignasi Clavera,</p>
+                
+            
+                
+                 <p class="authors">David Held and</p>
+            
+                
+                 <p class="authors">Pieter Abbeel</p>
+            
+            <p class="conference">International Conference on Intelligent Robots and Systems (IROS), 2017</p>
+            <p class="period"></p>
+            <div class="social">
+            <a href="https://www.ri.cmu.edu/wp-content/uploads/2017/11/IROS___RL_pushing.pdf" target="_blank">arXiv</a>
+            <a href="https://sites.google.com/site/policytransferviamodularity/" target="_blank">Webpage</a>
+            
+            </div>
+            <p class="abstract">Non-prehensile manipulation, such as pushing, is an important function for robots to move objects and is sometimes preferred as an alternative to grasping. However, due to unknown frictional forces, pushing has been proven a difficult task for robots. We explore the use of reinforcement learning to train a robot to robustly push an object. In order to deal with the sample complexity of training such a method, we train the pushing policy in simulation and then transfer this policy to the real world. In order to ease the transfer from simulation, we propose to use modularity to separate the learned policy from the raw inputs and outputs; rather than training “end-to-end,” we decompose our system into modules and train only a subset of these modules in simulation. We further demonstrate that we can incorporate prior knowledge about the task into the state space and the reward function to speed up convergence. Finally, we introduce ”reward guiding” to modify the reward function and further reduce the training time. We demonstrate, in both simulation and real-world experiments, that such an approach can be used to reliably push an object from many initial positions and orientations.</p>
+        </dd>
+    
+</dl>
+
+</div>
+
+        <footer class="footer">
+    <p class="footer__title">Ignasi Clavera</p>
+    <p class="footer__subtitle">PhD Student</p>
+</footer>
+
+    </body>
+</html>
